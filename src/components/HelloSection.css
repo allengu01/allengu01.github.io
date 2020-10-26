@@ -1,0 +1,87 @@
+.hello-container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hi {
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+
+#name {
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 1.33rem;
+    color: rgba(0,79,235,1);
+}
+
+.icons {
+    display: flex;
+    margin-top: 1.0rem;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons a {
+    width: 64px;
+}
+
+#github img {
+    height: 2.0em;
+}
+
+#linkedin img {
+    height: 2.0em;
+}
+
+#email img {
+    height: 2.0em;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.down-arrow {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 100px;
+    animation: bounce 2s infinite;
+    z-index: 1;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+#down img {
+    height: 2.0em;
+}

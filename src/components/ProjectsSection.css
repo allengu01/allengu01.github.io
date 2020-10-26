@@ -1,0 +1,13 @@
+.projects-container {
+    margin-left: 8.333333%;
+    margin-right: 8.333333%;
+    margin-top: 50px;
+}
+
+.ProjectsSection h1 {
+    text-align: left;
+}
+
+.project-carousel {
+    min-height: 400px;
+}
