@@ -67,18 +67,6 @@
     height: 100vh;
 }
 
-.down-arrow {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    bottom: 50px;
-    animation: bounce 2s infinite;
-    z-index: 1;
-}
-
 @keyframes bounce {
     0% { transform: translateY(0); }
     50% { transform: translateY(-20px); }

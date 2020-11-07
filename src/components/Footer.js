@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="Footer">
             <div className="footer-container">
-                <div className="handle">@allengu01</div>
+                <div className="handle">allengu01@berkeley.edu</div>
             </div>
         </div>
     )

@@ -13,6 +13,8 @@
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 480px;
     grid-gap: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .project-container {
@@ -25,7 +27,18 @@
     border: 3px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(45deg, rgba(107,84,255,1) 0%, rgba(0,22,255,1) 100%);
-    z-index: 999;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-container:hover {
+    margin-top: -1%;
+    margin-left: -1%;
+    height: 102%;
+    width: 102%;
+    padding: 1% 1% 1% 1%;
+    transition: all 0.2s ease-in-out;
 }
 
 .project-link {

@@ -19,5 +19,4 @@
     border-image-source: linear-gradient(90deg, rgba(107,84,255,1) 0%, rgba(0,22,255,1) 100%);
     height: calc(100vh - 180px);
     width: 100%;
-    max-width: 900px;
 }
