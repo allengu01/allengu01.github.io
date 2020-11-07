@@ -1,21 +1,22 @@
 .ResumeSection h1 {
     font-size: 3.0em;
-    text-align: center;
+    margin-left: 16.666667%;
+    margin-right: 16.666667%;
     padding: 20px 0 10px 0;
 }
 
 .resume-container {
     padding: 10px 0 20px 0;
+    margin-left: 16.666667%;
+    margin-right: 16.666667%;
     display: flex;
-    justify-content: center;
-    align-content: center;
     overflow: hidden;
 }
 
 .ResumeSection iframe {
     border: 3px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, rgba(31,163,217,1) 0%, rgba(90,123,237,1) 100%);
+    border-image-source: linear-gradient(90deg, rgba(107,84,255,1) 0%, rgba(0,22,255,1) 100%);
     height: calc(100vh - 180px);
     width: 100%;
     max-width: 900px;

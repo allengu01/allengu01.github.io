@@ -1,9 +1,5 @@
 .navbar * {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free"  !important;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .navbar {
@@ -11,9 +7,7 @@
     font-size: 1.2rem;
     position: sticky;
     top: 0px;
-    border-bottom: 3px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, rgba(31,163,217,1) 0%, rgba(90,123,237,1) 100%);
+    border-bottom: 1px solid;
     backdrop-filter: blur(5px);
     z-index: 999;
 }
@@ -30,15 +24,14 @@
 }
 
 .navbar-logo {
-    color: #222222;
-    margin-left: 50px;
+    margin-left: 8.333333%;
     margin-right: auto;
+}
+
+.navbar-logo-image {
     align-self: center;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
+    height: 40px;
+    width: 40px;
 }
 
 .nav-menu {
@@ -74,7 +67,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(31,163,217,1);
+    background-color: #4c34eb;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.2s ease-in-out;
@@ -86,7 +79,7 @@
   }
 
 .fa-bars {
-    color: rgba(31,163,217,1);
+    color: #4c34eb;
 }
 
 .menu-icon {
@@ -142,7 +135,7 @@
     }
 
     .fa-times {
-        color: rgba(31,163,217,1);
+        color: #4c34eb;
         font-size: 2rem;
     }
 }

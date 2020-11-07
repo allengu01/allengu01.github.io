@@ -12,13 +12,10 @@ function HelloSection() {
                         I’m a freshman at UC Berkeley studying Electrical Engineering and Computer Science.
                     </p>
                     <div className="icons">
-                        <a href="https://github.com/allengu01" id="github" target="_blank"><img alt="Github" src="./images/github.svg"></img></a>
-                        <a href="https://www.linkedin.com/in/allengu01/" id="linkedin" target="_blank"><img alt="Linkedin" src="./images/linkedin.png"></img></a>
-                        <a href="mailto:allengu01@berkeley.edu" id="email" target="_blank"><img alt="Email" src="./images/email.svg"></img></a>
+                        <a href="https://github.com/allengu01" id="github" target="_blank" rel="noreferrer"><img alt="Github" src="./images/github.svg"></img></a>
+                        <a href="https://www.linkedin.com/in/allengu01/" id="linkedin" target="_blank" rel="noreferrer"><img alt="Linkedin" src="./images/linkedin.png"></img></a>
+                        <a href="mailto:allengu01@berkeley.edu" id="email" target="_blank" rel="noreferrer"><img alt="Email" src="./images/email.svg"></img></a>
                     </div>
-                </div>
-                <div className="down-arrow">
-                    <a href="/" id="down"><img alt="Down" src="./images/down-arrow.svg"></img></a>
                 </div>
             </div>
         </div>

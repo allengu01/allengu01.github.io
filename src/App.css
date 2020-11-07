@@ -2,16 +2,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: #222222
+}
+
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free"  !important;
 }
 
 .home-separator {
   height: 5px;
   margin-left: 33.333333%; 
   width: 33.333333%;
-  background: linear-gradient(90deg, rgba(181,164,242,1) 0%, rgba(31,163,217,1) 100%);
+  background: linear-gradient(90deg, rgba(143,181,244,1) 0%, rgba(181,164,242,1) 10%, rgba(111,195,246,1) 30%, rgba(181,164,242,1) 50%, rgba(111,195,246,1) 70%, rgba(181,164,242,1) 90%, rgba(150,178,244,1) 100%);
   background-size: 6000% 100%;
-  animation: gradient-animate 4s ease infinite;
+  animation: gradient-animate 20s ease infinite;
 }
 
 @keyframes gradient-animate {

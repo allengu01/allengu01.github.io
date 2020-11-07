@@ -8,13 +8,14 @@
 }
 
 .intro {
+    max-width: 640px;
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .intro * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #hi {
@@ -28,13 +29,15 @@
 }
 
 #description {
+    margin-top: 0.5rem;
     font-size: 1.33rem;
+    font-weight: 300;
     color: rgba(0,79,235,1);
 }
 
 .icons {
     display: flex;
-    margin-top: 1.0rem;
+    margin-top: 1.67rem;
     align-self: center;
     justify-content: center;
     align-items: center;
