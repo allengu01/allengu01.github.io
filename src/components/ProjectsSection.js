@@ -12,6 +12,7 @@ function ProjectsSection() {
                     return (
                         <Project 
                             id={id}
+                            show_info={true}
                             title={data.title}
                             link={data.link}
                             image={data.image}
