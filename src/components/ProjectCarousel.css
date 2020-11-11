@@ -28,8 +28,10 @@
 
 @keyframes bounceRight {
     0% { transform: translateX(0); } 
-    25% { transform: translateX(10px); }
-    50% { transform: translateX(0); }
+    10% { transform: translateX(5px); }
+    20% { transform: translateX(0); }
+    30% { transform: translateX(5px); }
+    40% { transform: translateX(0); }
     100% { transform: translateX(0); }
 }
 

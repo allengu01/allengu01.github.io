@@ -20,4 +20,11 @@ export const projectsData = [
         labels: ["HTML", "CSS", "JS"],
         description: "A simple simulator of how an infection spreads for different infection rates, density of nodes, and infection distances."
     },
+    {
+        title: "Pathfinding Visualizer",
+        link: "https://allengu01.github.io/pathfinder-map/",
+        image: "../images/pathfinder-visualizer.svg",
+        labels: ["HTML", "CSS", "JS"],
+        description: "A visualizing application for pathfinding algorithms. Currently, I have implemented a BFS search and plan on adding more in the future."
+    },
 ]
