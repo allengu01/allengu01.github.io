@@ -21,15 +21,17 @@
 #hi {
     font-size: 2.0rem;
     font-weight: 500;
+    margin-bottom: -0.5rem;
 }
 
 #name {
     font-size: 4.0rem;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 #description {
-    margin-top: 0.5rem;
+    margin-top: 0.20rem;
     font-size: 1.33rem;
     font-weight: 300;
     color: rgba(0,79,235,1);
@@ -38,8 +40,7 @@
 .icons {
     display: flex;
     margin-top: 1.67rem;
-    align-self: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -75,4 +76,18 @@
 
 #down img {
     height: 2.0em;
+}
+
+@media screen and (max-width: 768px) {
+    #hi {
+        font-size: 1.8rem;
+    }
+
+    #name {
+        font-size: 3.0rem;
+    }
+
+    #description {
+        font-size: 1.0rem;
+    }
 }
