@@ -1,63 +1,55 @@
 .hello-container {
     width: 100%;
     height: calc(100vh - 60px);
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.intro {
+.intro-container {
     max-width: 640px;
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.intro * {
-    font-family: 'Raleway', sans-serif;
-}
-
 #hi {
-    font-size: 2.0rem;
-    font-weight: 500;
-    margin-bottom: -0.5rem;
+    font-size: 4.0rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
 }
 
 #name {
-    font-size: 4.0rem;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    color: rgba(0,21,184,1);
 }
 
 #description {
     margin-top: 0.20rem;
     font-size: 1.33rem;
     font-weight: 300;
-    color: rgba(0,79,235,1);
 }
 
 .icons {
     display: flex;
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    background-color: #cfd9ff;
     margin-top: 1.67rem;
-    justify-content: flex-start;
+    box-shadow: 3px 3px 5px #777777;
+    justify-content: space-between;
     align-items: center;
 }
 
-.icons a {
-    width: 64px;
+.icons .fa-github, .icons .fa-linkedin-in, .icons .fa-envelope {
+    font-size: 2rem;
 }
 
-#github img {
-    height: 2.0em;
-}
-
-#linkedin img {
-    height: 2.0em;
-}
-
-#email img {
-    height: 2.0em;
+.icons .fa-github:hover, .icons .fa-linkedin-in:hover, .icons .fa-envelope:hover {
+    color: #4c34eb;
 }
 
 #canvas {
@@ -79,15 +71,31 @@
 }
 
 @media screen and (max-width: 768px) {
-    #hi {
-        font-size: 1.8rem;
+    .intro-container {
+        width: 66.666667%
     }
 
-    #name {
-        font-size: 3.0rem;
+    #hi, #name {
+        font-size: 2.0rem;
     }
 
     #description {
         font-size: 1.0rem;
+    }
+
+    .icons {
+        display: flex;
+        width: 150px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 30px;
+        background-color: #cfd9ff;
+        margin-top: 1.67rem;
+        box-shadow: 3px 3px 5px #777777;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icons .fa-github, .icons .fa-linkedin-in, .icons .fa-envelope {
+        font-size: 1.5rem;
     }
 }

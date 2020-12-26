@@ -22,7 +22,6 @@ function ProjectCarousel() {
 
     return (
         <div className="ProjectCarousel">
-            <hr class="home-separator" />
             <h1>Projects</h1>
             <div className="projects-carousel-container">
                 {projectsData.map((data, id) => {

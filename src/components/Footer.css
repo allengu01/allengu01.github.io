@@ -1,12 +1,33 @@
+.Footer {
+    border-top: 1px solid;
+}
+
 .footer-container {
     display: flex;
     height: 50px;
     align-content: center;
     justify-content: flex-end;
-    border-top: 1px solid;
+    margin: 0 50px
+}
+.footer-icons {
+    display: flex;
+    margin-right: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-icons a {
+    width: 64px;
+}
+
+.footer-icons .fa-github, .footer-icons .fa-linkedin-in, .footer-icons .fa-envelope {
+    font-size: 1.5rem;
+}
+
+.footer-icons .fa-github:hover, .footer-icons .fa-linkedin-in:hover, .footer-icons .fa-envelope:hover {
+    color: #4c34eb;
 }
 
 .footer-container .handle {
     padding-top: 12px;
-    padding-right: 50px;
 }

@@ -7,10 +7,17 @@ export const projectsData = [
         description: "A visualization of the k-means clustering algorithm when it is applied to determine k colors that are representative of a provided image."
     },
     {
+    	title: "3D Snake",
+        link: "https://allengu01.github.io/3d-snake",
+        image: "../images/3d-snake.png",
+        labels: ["HTML", "CSS", "JS", "React"],
+        description: "A 3D Snake game built with React and Three.js. The game uses keyboard inputs as controls and tracks your score on a scoreboard."
+    }
+    {
         title: "Personal Website",
         link: "https://allengu01.github.io",
         image: "../images/personal-website-logo.png",
-        labels: ["HTML", "CSS", "JS", "ReactJS"],
+        labels: ["HTML", "CSS", "JS", "React"],
         description: "This is the personal website that I built to share a bit about myself on the Internet and store other projects that I create."
     },
     {
