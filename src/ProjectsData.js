@@ -1,18 +1,18 @@
 export const projectsData = [
     {
+    	title: "3D Snake",
+        link: "https://allengu01.github.io/3d-snake",
+        image: "../images/3d-snake.png",
+        labels: ["HTML", "CSS", "JS", "React"],
+        description: "A 3D Snake game built with React and Three.js. The game uses keyboard inputs as controls and tracks your score on a scoreboard."
+    },
+    {
         title: "k-Means Visualizer",
         link: "https://github.com/allengu01/kmeans-visualizer",
         image: "../images/k_means_visualizer.gif",
         labels: ["Python", "Numpy"],
         description: "A visualization of the k-means clustering algorithm when it is applied to determine k colors that are representative of a provided image."
     },
-    {
-    	title: "3D Snake",
-        link: "https://allengu01.github.io/3d-snake",
-        image: "../images/3d-snake.png",
-        labels: ["HTML", "CSS", "JS", "React"],
-        description: "A 3D Snake game built with React and Three.js. The game uses keyboard inputs as controls and tracks your score on a scoreboard."
-    }
     {
         title: "Personal Website",
         link: "https://allengu01.github.io",
