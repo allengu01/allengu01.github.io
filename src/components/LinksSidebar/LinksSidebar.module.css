@@ -1,0 +1,30 @@
+.linksContainer {
+    position: fixed;
+    bottom: 40px;
+    left: 3.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.icon {
+    width: 24px;
+    height: auto;
+    margin: 4px 0px 4px 0px;
+    color: #ABABAB;
+    transition: all 0.2s ease-in;
+}
+
+.icon:hover {
+    color: #898989;
+}
+
+.verticalLine {
+    width: 1px;
+    height: 60px;
+}

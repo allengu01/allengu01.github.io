@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6.67% 0 6.67%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.introContainer {
+    margin: 0 13.33% 0 13.33%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0B36DF;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #898989;
+}

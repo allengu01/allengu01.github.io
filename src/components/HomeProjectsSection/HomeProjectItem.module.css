@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 24px;
+    margin: 4px 0px 4px 0px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 22px;
+    color: #0B36DF;
+    transition: all 0.4s ease-in;
+}
+
+.title.active {
+    font-size: 24px;
+}
+
+.labelsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+    transition: all 0.4s ease-in;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 2px 8px 2px 8px;
+    margin: 0px 2px 0px 2px;
+    border: 2px solid #646464;
+    border-radius: 24px;
+}
+
+.description {
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 20px 0px 20px;
+    font-size: 14px;
+    height: auto;
+    opacity: 1;
+    transition: all 1.0s ease-in;
+}
+
+.description:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+}

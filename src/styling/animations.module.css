@@ -1,0 +1,34 @@
+.fadeIn {
+    animation-name: fadeInAnimation;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fromBottom {
+
+}
+
+
+
+
+
+.one {
+    animation-delay: 0s;
+}
+
+.two {
+    animation-delay: 0.5s;
+}
+
+.three {
+    animation-delay: 1.0s;
+}
