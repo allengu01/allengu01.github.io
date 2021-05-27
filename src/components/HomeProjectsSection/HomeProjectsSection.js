@@ -11,7 +11,7 @@ import * as styles from "./HomeProjectsSection.module.css";
 
 const HomeProjectsSection = ({data}) => {
     const [active, setActive] = useState(0);
-    const [size, setSize] = useState(window.innerWidth);
+    const [size, setSize] = useState(0);
     const GIF_PROJECTS = {"k-Means Visualizer" : kMeans,
                           "Find Your Zen" : findYourZen};
     const projectsData = data.allProjectsJson.edges;
@@ -21,7 +21,7 @@ const HomeProjectsSection = ({data}) => {
             setSize(window.innerWidth);
         }
         window.addEventListener("resize", handleResize);
-
+        handleResize();
         return () => {
             window.removeEventListener("resize", handleResize);
         }
