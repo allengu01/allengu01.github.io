@@ -10,7 +10,7 @@ const IndexPage = ({data}) => {
   return (
     <Layout>
       <HomeIntroSection />
-      <HomeProjectsSection projectsData={data.allProjectsJson.edges}/>
+      <HomeProjectsSection data={data}/>
     </Layout>
   )
 }
@@ -33,7 +33,7 @@ export const projectsQuery = graphql`
                     image {
                         childImageSharp {
                             gatsbyImageData(
-                                placeholder: BLURRED
+                                placeholder: NONE
                             )
                         }
                     }

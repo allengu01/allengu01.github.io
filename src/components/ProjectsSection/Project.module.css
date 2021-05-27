@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 4px 2px 2px #CECECE;
+}
+
+.topContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 10px 0px 10px 0px;
+}
+
+.bottomContainer {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+.bottomContainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%);;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.blurContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.topContainer:hover .blurContainer {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.linkIcon {
+    height: 36px;
+    width: auto;
+    margin: 0px 8px 0px 8px;
+    color: #CECECE;
+}
+
+.linkIcon:hover {
+    color: #898989;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.projectTitle {
+    margin: 10px 20px 10px 20px;
+    width: calc(100% - 40px);
+}
+
+.description {
+    margin: 10px 20px 10px 20px;
+    width: calc(100% - 40px);
+}
+
+.labelsContainer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+    width: calc(100% - 40px);
+    height: 24px;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #898989;
+    text-transform: uppercase;
+    padding: 2px 6px 2px 6px;
+    margin: 0px 2px 0px 2px;
+    border-radius: 20px;
+    border: 2px solid #898989;
+}
+

@@ -4,16 +4,18 @@ import {GatsbyImage, getImage} from "gatsby-plugin-image";
 import HomeProjectItem from "./HomeProjectItem.js";
 import {FaGithub} from "@react-icons/all-files/fa/FaGithub";
 import {FaLink} from "@react-icons/all-files/fa/FaLink";
+import {FaLongArrowAltRight} from "@react-icons/all-files/fa/FaLongArrowAltRight";
 import kMeans from "../../images/projects/k_means_visualizer.gif";
 import findYourZen from "../../images/projects/find-your-zen.gif";
 import * as styles from "./HomeProjectsSection.module.css";
 
-const HomeProjectsSection = ({projectsData}) => {
+const HomeProjectsSection = ({data}) => {
     const [active, setActive] = useState(0);
     const [size, setSize] = useState(window.innerWidth);
     const GIF_PROJECTS = {"k-Means Visualizer" : kMeans,
                           "Find Your Zen" : findYourZen};
-
+    const projectsData = data.allProjectsJson.edges;
+    
     useEffect(() => {
         const handleResize = () => {
             setSize(window.innerWidth);
@@ -50,8 +52,8 @@ const HomeProjectsSection = ({projectsData}) => {
                     {project.title}
                 </h1>
                 <div className={styles.labelsContainer}>
-                    {project.labels.map((label) => (
-                        <div className={styles.label}>
+                    {project.labels.map((label, id) => (
+                        <div key={id} className={styles.label}>
                             {label}
                         </div>
                     ))}
@@ -82,7 +84,6 @@ const HomeProjectsSection = ({projectsData}) => {
         <div className={styles.container}>
             <h1 className={styles.title}>Projects</h1>
             <div className={styles.projectsContainer}>
-                {console.log(getNumDisplayed(size))}
                 {projectsData.slice(0, getNumDisplayed()).map((data, id) => {
                     const project = data.node;
                     return (
@@ -96,8 +97,16 @@ const HomeProjectsSection = ({projectsData}) => {
                             active={id === active}
                             onClick={() => {setActive(id)}} />
                     )
-                    })};
+                    })}
             </div>
+            <Link to="/projects" className={styles.link}>
+                <div className={styles.arrowContainer}>
+                    <span className={styles.arrowLabel}>
+                        All Projects
+                    </span>
+                    <FaLongArrowAltRight className={styles.arrow}/>
+                </div>
+            </Link>
             {renderShowcase()}
         </div>
     )

@@ -10,7 +10,7 @@ const Navbar = () => {
             <nav className={styles.navbar}>
                 <Link className={styles.link} to="/">
                     <div className={styles.logoContainer}>
-                        <StaticImage className={styles.logoImage} src={"../../images/logo.svg"} alt="Logo" />
+                        <StaticImage className={styles.logoImage} src={"../../images/logo.svg"} alt="Logo" placeholder="none"/>
                         <div className={styles.logoName}>Allen Gu</div>
                     </div>
                 </Link>
@@ -19,10 +19,13 @@ const Navbar = () => {
                 </div>
             </nav>
             <div className={toggle ? `${styles.menu} ${styles.toggled}` : styles.menu}>
-                <Link to="projects" className={styles.link}>
+                <Link to="/" className={styles.link}>
+                    <div className={toggle ? `${styles.menuItem} ${styles.toggled}` : styles.menuItem}>Home</div>
+                </Link>
+                <Link to="/projects" className={styles.link}>
                     <div className={toggle ? `${styles.menuItem} ${styles.toggled}` : styles.menuItem}>Projects</div>
                 </Link>
-                <Link to="resume" className={styles.link}>
+                <Link to="/resume" className={styles.link}>
                     <div className={toggle ? `${styles.menuItem} ${styles.toggled}` : styles.menuItem}>Resume</div>
                 </Link>
             </div>

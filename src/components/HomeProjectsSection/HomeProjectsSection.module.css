@@ -41,7 +41,7 @@
 
 .linksContainer {
     position: absolute;
-    top: 16.67%;
+    top: calc(6.67% + 64px);
     right: 13.33%;
     display: flex;
     flex-direction: row;
@@ -51,10 +51,11 @@
 
 .link {
     text-decoration: none;
+    z-index: 10;
 }
 
 .linkIcon {
-    margin: 0px 4px 0px 4px;
+    margin: 0px 6px 0px 6px;
     height: 30px;
     width: auto;
     color: #CECECE;
@@ -68,7 +69,7 @@
 
 .showcaseImageContainer {
     position: absolute;
-    top: 26.67%;
+    top: calc(6.67% + 144px);
     right: 13.33%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
     width: 66.67%;
@@ -111,26 +112,55 @@
     border-radius: 50px;
 }
 
+.arrowContainer {
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrowLabel {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 140px);
+    height: 24px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.arrow {
+    position: absolute;
+    height: 24px;
+    width: auto;
+    left: 50%;
+    color: #0B36DF;
+    animation: arrowBounce 5.0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowBounce {
+    from {
+        transform: translateX(0px);
+    }
+    
+    80% {
+        transform: translateX(0px);
+    }
+
+    90% {
+        transform: translateX(6px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
 @media screen and (max-width: 720px) {
     .projectsContainer {
         width: 83.33%;
     }
-    
+
     .showcaseContainer {
         visibility: hidden;
-    }
-}
-
-@media screen and (min-width: 961px) and (max-width: 1200px) {
-    .projects-carousel-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .to-projects {
-        right: -60px;
-    }
-
-    .fa-angle-double-right {
-        font-size: 2.0rem;
     }
 }

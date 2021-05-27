@@ -50,22 +50,12 @@
         "description": "This is the personal website that I built to share a bit about myself on the Internet and store other projects that I create."
     },
     {
-        "title": "Virus Simulator",
-        "links": {
-            "default": "https://allengu01.github.io/virus-simulator/",
-            "github": "https://github.com/allengu01/virus-simulator"
-        },
-        "image": "../images/projects/virus_simulator.png",
-        "labels": ["HTML", "CSS", "JS"],
-        "description": "A simple simulator of how an infection spreads for different infection rates, density of nodes, and infection distances."
-    },
-    {
         "title": "Pathfinding Visualizer",
         "links": {
             "default": "https://allengu01.github.io/pathfinder-map/",
             "github": "https://github.com/allengu01/pathfinder-map"
         },
-        "image": "../images/projects/pathfinder-visualizer.svg",
+        "image": "../images/projects/pathfinding-visualizer.png",
         "labels": ["HTML", "CSS", "JS"],
         "description": "A visualizing application for pathfinding algorithms. Currently, I have implemented a BFS search and plan on adding more in the future."
     }
