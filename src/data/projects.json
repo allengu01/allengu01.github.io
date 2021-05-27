@@ -3,7 +3,7 @@
         "title": "3D Snake",
         "links": {
             "default": "https://allengu01.github.io/3d-snake",
-            "github": ""
+            "github": "https://github.com/allengu01/3d-snake"
         },
         "image": "../images/projects/3d-snake.png",
         "labels": ["HTML", "CSS", "JS", "React"],
@@ -13,7 +13,7 @@
         "title": "k-Means Visualizer",
         "links": {
             "default": "https://github.com/allengu01/kmeans-visualizer",
-            "github": ""
+            "github": "https://github.com/allengu01/kmeans-visualizer"
         },
         "image": "../images/projects/k_means_visualizer.gif",
         "labels": ["Python", "Numpy"],
@@ -23,11 +23,21 @@
         "title": "Find Your Zen",
         "links": {
             "default": "https://www.youtube.com/watch?v=QDJAHBP8HWI",
-            "github": ""
+            "github": "https://github.com/allengu01/find-your-zen"
         },
-        "image": "../images/projects/k_means_visualizer.gif",
+        "image": "../images/projects/find-your-zen.gif",
         "labels": ["Swift"],
         "description": "A mindfulness app including daily checkins, breathing exercises, and meditation timers. Built to practice iOS development and design."
+    },
+    {
+        "title": "Musical Heap",
+        "links": {
+            "default": "https://www.youtube.com/watch?v=QDJAHBP8HWI",
+            "github": "https://github.com/allengu01/musical-heap"
+        },
+        "image": "../images/projects/musical-heap.png",
+        "labels": ["HTML", "CSS", "JS"],
+        "description": "A min-heap visualization tool that plays musical notes during insert and remove operations."
     },
     {
         "title": "Personal Website",
@@ -36,14 +46,14 @@
             "github": ""
         },
         "image": "../images/projects/personal-website-logo.png",
-        "labels": ["HTML", "CSS", "JS", "React"],
+        "labels": ["React", "Gatsby"],
         "description": "This is the personal website that I built to share a bit about myself on the Internet and store other projects that I create."
     },
     {
         "title": "Virus Simulator",
         "links": {
             "default": "https://allengu01.github.io/virus-simulator/",
-            "github": ""
+            "github": "https://github.com/allengu01/virus-simulator"
         },
         "image": "../images/projects/virus_simulator.png",
         "labels": ["HTML", "CSS", "JS"],
@@ -53,7 +63,7 @@
         "title": "Pathfinding Visualizer",
         "links": {
             "default": "https://allengu01.github.io/pathfinder-map/",
-            "github": ""
+            "github": "https://github.com/allengu01/pathfinder-map"
         },
         "image": "../images/projects/pathfinder-visualizer.svg",
         "labels": ["HTML", "CSS", "JS"],
