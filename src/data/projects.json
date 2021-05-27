@@ -7,7 +7,7 @@
         },
         "image": "../images/projects/3d-snake.png",
         "labels": ["HTML", "CSS", "JS", "React"],
-        "description": "A 3D Snake game built with React and Three.js. The game uses keyboard inputs as controls and tracks your score on a scoreboard."
+        "description": "A 3D version of the classic Snake game built with React and Three.js. Also implemented an AI using pathfinding algorithms."
     },
     {
         "title": "k-Means Visualizer",
@@ -17,7 +17,7 @@
         },
         "image": "../images/projects/k_means_visualizer.gif",
         "labels": ["Python", "Numpy"],
-        "description": "A visualization of the k-means clustering algorithm when it is applied to determine k colors that are representative of a provided image."
+        "description": "A visualization of the k-means clustering algorithm being applied to the problem of determining a k-color palette representative of a provided image."
     },
     {
         "title": "Find Your Zen",
@@ -57,6 +57,6 @@
         },
         "image": "../images/projects/pathfinding-visualizer.png",
         "labels": ["HTML", "CSS", "JS"],
-        "description": "A visualizing application for pathfinding algorithms. Currently, I have implemented a BFS search and plan on adding more in the future."
+        "description": "A visualization for pathfinding algorithms. Currently implements breadth-first search."
     }
 ]

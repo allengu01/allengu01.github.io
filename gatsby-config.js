@@ -2,6 +2,8 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: "Allen Gu",
+    siteUrl: "https://allengu01.github.io/",
+    description: "Personal website of Allen Gu."
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -9,6 +11,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-react-helmet`
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

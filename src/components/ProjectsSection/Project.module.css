@@ -83,6 +83,7 @@
     width: auto;
     margin: 0px 8px 0px 8px;
     color: #CECECE;
+    transition: all 0.2s ease-in;
 }
 
 .linkIcon:hover {
