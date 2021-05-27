@@ -17,7 +17,7 @@
         },
         "image": "../images/projects/k_means_visualizer.gif",
         "labels": ["Python", "Numpy"],
-        "description": "A visualization of the k-means clustering algorithm being applied to the problem of determining a k-color palette representative of a provided image."
+        "description": "Graphs iterations of the k-means clustering algorithm when applied to the problem of determining a k-color palette representative of a provided image."
     },
     {
         "title": "Find Your Zen",
@@ -37,7 +37,7 @@
         },
         "image": "../images/projects/musical-heap.png",
         "labels": ["HTML", "CSS", "JS"],
-        "description": "A min-heap visualization tool that plays musical notes during insert and remove operations."
+        "description": "A min-heap that displays intermediate steps and plays musical notes during insert and remove operations."
     },
     {
         "title": "Personal Website",
@@ -57,6 +57,6 @@
         },
         "image": "../images/projects/pathfinding-visualizer.png",
         "labels": ["HTML", "CSS", "JS"],
-        "description": "A visualization for pathfinding algorithms. Currently implements breadth-first search."
+        "description": "A visualization tool for pathfinding algorithms. Currently implements breadth-first search."
     }
 ]
