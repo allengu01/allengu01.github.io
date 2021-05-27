@@ -11,7 +11,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -20,14 +20,6 @@ module.exports = {
           `Open Sans`
         ],
         display: 'swap'
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /svg/
-        }
       }
     },
     {
@@ -44,6 +36,18 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images/`,
         ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Allen Gu`,
+        short_name: `Allen Gu`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/images/logo.svg`
       },
     },
   ],
