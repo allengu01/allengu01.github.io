@@ -1,6 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
     margin: 10px 0px 10px 0px;
     cursor: pointer;
 }
@@ -10,7 +11,15 @@
     flex-direction: row;
     justify-content: flex-start;
     height: 24px;
-    margin: 4px 0px 4px 0px;
+    margin: 4px 0px -12px 8px;
+    z-index: 10;
+}
+
+.bottomContainer {
+    border: 1px solid #ACACAC;
+    border-radius: 2px;
+    box-shadow: 5px 2px 10px #DEDEDE;
+    padding: 12px 8px 8px 8px;
 }
 
 .link {
@@ -19,8 +28,10 @@
 
 .title {
     font-size: 22px;
-    color: #0B36DF;
+    font-weight: 600;
     transition: all 0.4s ease-in;
+    padding: 0px 8px 0px 8px;
+    background: white;
 }
 
 .title.active {
@@ -52,7 +63,7 @@
 .description {
     position: relative;
     margin: 10px 10px 10px 10px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 4px 0px 20px;
     font-size: 14px;
     color: #222222;
     height: auto;
@@ -68,5 +79,5 @@
     height: 100%;
     width: 2px;
     border-radius: 1px;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(11,53,223,1) 0%, rgba(11,53,223,1) 50%, rgba(0,0,0,0) 100%);
 }

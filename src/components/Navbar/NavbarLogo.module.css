@@ -1,0 +1,22 @@
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logoImage {
+    width: 34px;
+    height: 36px;
+}
+
+.logoName {
+    margin: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.link {
+    text-decoration: none;
+}

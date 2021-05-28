@@ -7,8 +7,10 @@ const HomeProjectItem = ({title, labels, description, link, active, onClick}) =>
             <div className={styles.topContainer}>
                 <h1 className={styles.title}>{title}</h1>
             </div>
-            <div className={styles.description}>
-                {description}
+            <div className={styles.bottomContainer}>
+                <div className={styles.description}>
+                    {description}
+                </div>
             </div>
         </div>
     )

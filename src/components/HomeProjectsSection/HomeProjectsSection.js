@@ -1,19 +1,13 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "gatsby";
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
 import HomeProjectItem from "./HomeProjectItem.js";
-import {FaGithub} from "@react-icons/all-files/fa/FaGithub";
-import {FaLink} from "@react-icons/all-files/fa/FaLink";
+import HomeProjectShowcase from "./HomeProjectShowcase.js";
 import {FaLongArrowAltRight} from "@react-icons/all-files/fa/FaLongArrowAltRight";
-import kMeans from "../../images/projects/k_means_visualizer.gif";
-import findYourZen from "../../images/projects/find-your-zen.gif";
 import * as styles from "./HomeProjectsSection.module.css";
 
 const HomeProjectsSection = ({data}) => {
     const [active, setActive] = useState(0);
     const [size, setSize] = useState(0);
-    const GIF_PROJECTS = {"k-Means Visualizer" : kMeans,
-                          "Find Your Zen" : findYourZen};
     const projectsData = data.allProjectsJson.edges;
     
     useEffect(() => {
@@ -28,11 +22,10 @@ const HomeProjectsSection = ({data}) => {
     })
 
     const getNumDisplayed = () => {
-        console.log(size);
-        if (0 <= size && size <= 920) {
+        if (0 <= size && size <= 1000) {
             return 3;
         }
-        else if (920 < size && size <= 1440) {
+        else if (1000 < size && size <= 1440) {
             return 4;
         }
         else if (1440 < size && size < 1920) {
@@ -41,43 +34,6 @@ const HomeProjectsSection = ({data}) => {
         else {
             return 6;
         }
-    }
-
-    const renderShowcase = () => {
-        const project = projectsData[active].node;
-        const image = getImage(project.image);
-        return (
-            <div className={styles.showcaseContainer}>
-                <h1 className={styles.showcaseTitle}>
-                    {project.title}
-                </h1>
-                <div className={styles.labelsContainer}>
-                    {project.labels.map((label, id) => (
-                        <div key={id} className={styles.label}>
-                            {label}
-                        </div>
-                    ))}
-                </div>
-                <div className={styles.linksContainer}>
-                    {project.links.github && 
-                        <Link to={project.links.github} className={styles.link}>
-                            <FaGithub className={styles.linkIcon} id="github"/>
-                        </Link>
-                    }
-                    {project.links.default &&
-                        <Link to={project.links.default} className={styles.link}>
-                            <FaLink className={styles.linkIcon} id="default"/>
-                        </Link>
-                    }
-                </div>
-                <div className={styles.showcaseImageContainer}>
-                    {(project.title in GIF_PROJECTS) ? 
-                        <img className={styles.showcaseImage} src={GIF_PROJECTS[project.title]} alt={project.title}></img> :
-                        <GatsbyImage className={styles.showcaseGatsbyImageContainer} imgClassName={styles.showcaseImage} objectFit="contain" image={image} alt={project.title} />
-                    }
-                </div>
-            </div>
-        )
     }
 
     return (
@@ -107,7 +63,7 @@ const HomeProjectsSection = ({data}) => {
                     <FaLongArrowAltRight className={styles.arrow}/>
                 </div>
             </Link>
-            {renderShowcase()}
+            <HomeProjectShowcase project={projectsData[active].node} />
         </div>
     )
 }

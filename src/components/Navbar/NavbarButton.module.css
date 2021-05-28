@@ -1,0 +1,49 @@
+.menuButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 auto; 
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuButtonBurger {
+    width: 24px;
+    height: 4px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuButtonBurger::before, .menuButtonBurger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuButtonBurger::before {
+    transform: translateY(-8px);
+}
+
+.menuButtonBurger::after {
+    transform: translateY(8px);
+}
+
+.menuButton.toggled .menuButtonBurger {
+    background: transparent;
+}
+
+.menuButton.toggled .menuButtonBurger::before {
+    transform: rotate(45deg);
+}
+
+.menuButton.toggled .menuButtonBurger::after {
+    transform: rotate(-45deg);
+}

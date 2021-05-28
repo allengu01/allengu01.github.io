@@ -1,34 +1,39 @@
 import React, {useState} from "react";
 import { Link } from "gatsby";
-import {StaticImage} from "gatsby-plugin-image";
+import { motion } from "framer-motion";
+import NavbarLogo from "./NavbarLogo.js";
+import NavbarButton from "./NavbarButton.js";
+import NavbarItem from "./NavbarItem.js";
 import * as styles from "./Navbar.module.css";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const variants = {
+        open: {
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.2
+            }
+        },
+        closed: {
+            transition: {
+                staggerChildren: 0.1,
+                staggerDirection: -1
+            }
+        }
+    }
     return (
         <div>
             <nav className={styles.navbar}>
-                <Link className={styles.link} to="/">
-                    <div className={styles.logoContainer}>
-                        <StaticImage className={styles.logoImage} src={"../../images/logo.svg"} alt="Logo" placeholder="none"/>
-                        <div className={styles.logoName}>Allen Gu</div>
-                    </div>
-                </Link>
-                <div className={toggle ? `${styles.menuButton} ${styles.toggled}` : styles.menuButton} onClick={() => {setToggle(!toggle)}}>
-                    <div className={styles.menuButtonBurger}></div>
-                </div>
+                <NavbarLogo />
+                <NavbarButton toggle={toggle} setToggle={setToggle}/>
             </nav>
-            <div className={toggle ? `${styles.menu} ${styles.toggled}` : styles.menu}>
-                <Link to="/" className={styles.link}>
-                    <div className={toggle ? `${styles.menuItem} ${styles.toggled}` : styles.menuItem}>Home</div>
-                </Link>
-                <Link to="/projects" className={styles.link}>
-                    <div className={toggle ? `${styles.menuItem} ${styles.toggled}` : styles.menuItem}>Projects</div>
-                </Link>
-                <Link to="/resume" className={styles.link}>
-                    <div className={toggle ? `${styles.menuItem} ${styles.toggled}` : styles.menuItem}>Resume</div>
-                </Link>
-            </div>
+            <motion.div className={toggle ? `${styles.menu} ${styles.toggled}` : styles.menu}
+                        initial={false} animate={toggle ? "open" : "closed"} variants={variants}>
+                <NavbarItem to="/" name="Home" toggle={toggle} />
+                <NavbarItem to="/projects" name="Projects" toggle={toggle} />
+                <NavbarItem to="/resume" name="Resume" toggle={toggle} />
+            </motion.div>
         </div>
     )
 }
