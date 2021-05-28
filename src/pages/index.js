@@ -1,6 +1,8 @@
-import * as React from "react";
+import React, {useEffect} from "react";
 import {graphql} from "gatsby";
 import {Helmet} from "react-helmet";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import HomeProjectsSection from "../components/HomeProjectsSection/HomeProjectsSection.js";
 import HomeIntroSection from "../components/HomeIntroSection/HomeIntroSection.js";
 import Layout from "../components/Layout/Layout.js";
@@ -8,6 +10,10 @@ import * as styles from "../styling/index.module.css";
 
 // markup
 const IndexPage = ({data}) => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  });
+
   return (
     <Layout>
       <Helmet>

@@ -4,7 +4,6 @@ import HomeProjectItem from "./HomeProjectItem.js";
 import HomeProjectShowcase from "./HomeProjectShowcase.js";
 import {FaLongArrowAltRight} from "@react-icons/all-files/fa/FaLongArrowAltRight";
 import * as styles from "./HomeProjectsSection.module.css";
-
 const HomeProjectsSection = ({data}) => {
     const [active, setActive] = useState(0);
     const [size, setSize] = useState(0);

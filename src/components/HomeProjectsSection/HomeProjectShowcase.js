@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import {Link} from "gatsby";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {FaGithub} from "@react-icons/all-files/fa/FaGithub";
 import {FaLink} from "@react-icons/all-files/fa/FaLink";
 import kMeans from "../../images/projects/k_means_visualizer.gif";
@@ -11,9 +13,30 @@ const HomeProjectShowcase = ({project}) => {
     const image = getImage(project.image);
     const GIF_PROJECTS = {"k-Means Visualizer" : kMeans,
                           "Find Your Zen" : findYourZen};
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.fromTo(containerRef.current,
+            {
+                opacity: 0,
+                x: 50
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration: 1.0,
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: "top 60%",
+                    toggleActions: "play none none none"
+                }
+            }
+        );
+    }, []);
 
     return (
-        <div className={styles.showcaseContainer}>
+        <div ref={containerRef} className={styles.showcaseContainer}>
             <h1 className={styles.showcaseTitle}>
                 {project.title}
             </h1>

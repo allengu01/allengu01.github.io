@@ -5,19 +5,20 @@ import * as styles from "./HomeIntroSection.module.css";
 const HomeIntroSection = () => {
     const containerVariants = {
         start: {
-            transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+            transition: { staggerChildren: 0.2, delayChildren: 0.2 }
         },
         enter: {
-            transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+            transition: { staggerChildren: 0.2, delayChildren: 0.4 }
         }
     }
 
     const itemVariants = {
         start: {
-            x: -50,
+            x: -20,
             opacity: 0,
             transition: {
-                velocity: 5,
+                duration: 0.5,
+                velocity: 1,
                 stiffness: 1000
             }
         },
@@ -25,6 +26,7 @@ const HomeIntroSection = () => {
             x: 0,
             opacity: 1,
             transition: {
+                duration: 0.5,
                 stiffness: 1000
             }
         }

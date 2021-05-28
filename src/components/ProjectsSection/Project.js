@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import {Link} from "gatsby";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import {motion} from "framer-motion";
 import {FaGithub} from "@react-icons/all-files/fa/FaGithub";
 import {FaLink} from "@react-icons/all-files/fa/FaLink";
 import kMeans from "../../images/projects/k_means_visualizer.gif";
@@ -11,8 +12,28 @@ const Project = ({project}) => {
     const image = getImage(project.image);
     const GIF_PROJECTS = {"k-Means Visualizer" : kMeans,
                           "Find Your Zen" : findYourZen};
+    const variants = {
+        start: {
+            opacity: 0,
+            y: 50,
+            transition: {
+                duration: 0.5,
+                velocity: 0,
+                stiffness: 100
+            }
+        },
+        end: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                stiffness: 100
+            }
+        }
+    }
+
     return (
-        <div className={styles.container}>
+        <motion.div className={styles.container} variants={variants}>
             <div className={styles.topContainer}>
                 { (project.title in GIF_PROJECTS) ?
                     <img className={styles.image} src={GIF_PROJECTS[project.title]} alt={project.title}></img> :
@@ -44,7 +65,7 @@ const Project = ({project}) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
