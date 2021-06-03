@@ -7,12 +7,14 @@ import {FaGithub} from "@react-icons/all-files/fa/FaGithub";
 import {FaLink} from "@react-icons/all-files/fa/FaLink";
 import kMeans from "../../images/projects/k_means_visualizer.gif";
 import findYourZen from "../../images/projects/find-your-zen.gif";
+import hohmannTransfer from "../../images/projects/hohmann-transfer-neat.gif";
 import * as styles from "./HomeProjectShowcase.module.css";
 
 const HomeProjectShowcase = ({project}) => {
     const image = getImage(project.image);
     const GIF_PROJECTS = {"k-Means Visualizer" : kMeans,
-                          "Find Your Zen" : findYourZen};
+                          "Find Your Zen" : findYourZen,
+                          "Hohmann Transfer - NEAT" : hohmannTransfer};
     const containerRef = useRef(null);
 
     useEffect(() => {

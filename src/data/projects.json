@@ -1,5 +1,15 @@
 [
     {
+        "title": "Hohmann Transfer - NEAT",
+        "links": {
+            "default": "https://youtu.be/1h5jzEOKVc8",
+            "github": "https://github.com/allengu01/hohmann-transfer-NEAT"
+        },
+        "image": "../images/projects/hohmann-transfer-neat.gif",
+        "labels": ["Python", "Pygame", "NEAT"],
+        "description": "Applying the NEAT genetic algorithm to learn the Hohmann transfer (a manuever to transfer between two different orbits)."
+    },
+    {
         "title": "3D Snake",
         "links": {
             "default": "https://allengu01.github.io/3d-snake",
