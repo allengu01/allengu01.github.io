@@ -29,7 +29,9 @@ const HomeProjectItem = ({title, labels, description, link, active, onClick}) =>
     return (
         <div ref={containerRef} className={`${styles.container} ${active ? styles.active : ""}`} onClick={onClick}>
             <div className={styles.topContainer}>
-                <h1 className={styles.title}>{title}</h1>
+                <div className={styles.titleBackground}>
+                    <h1 className={styles.title}>{title}</h1>
+                </div>
             </div>
             <div className={styles.bottomContainer}>
                 <div className={styles.description}>

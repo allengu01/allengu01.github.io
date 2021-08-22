@@ -8,7 +8,6 @@ const NavbarLogo = () => {
         <Link className={styles.link} to="/">
             <div className={styles.logoContainer}>
                 <StaticImage className={styles.logoImage} src={"../../images/logo.svg"} alt="Logo" placeholder="none"/>
-                <div className={styles.logoName}>Allen Gu</div>
             </div>
         </Link>
     )

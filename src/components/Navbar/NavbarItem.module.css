@@ -5,12 +5,12 @@
 .menuItem {
     position: relative;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     vertical-align: middle;
     font-size: 24px;
     color: black;
     line-height: 1.2em;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: 10px 5px 10px 5px;
 }
 
@@ -18,10 +18,12 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #0B36DF;
+    height: 0.8rem;
+    bottom: -2px;
+    left: 4px;
+    border-radius: 0.4rem;
+    background-color: rgba(58, 168, 252, 0.3);
+    z-index: -1;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.2s ease-in-out;
@@ -29,5 +31,5 @@
 
 .menuItem:hover::before {
     visibility: visible;
-    transform: scaleX(0.5);
+    transform: scaleX(1);
 }

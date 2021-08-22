@@ -23,9 +23,11 @@
     position: relative; 
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 20px 10px 20px;
 }
 
 .bottomContainer:before {
@@ -97,24 +99,39 @@
 }
 
 .projectTitle {
-    margin: 10px 20px 10px 20px;
-    font-weight: 500;
-    width: calc(100% - 40px);
+    margin: 10px auto 10px 0px;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.projectTitle::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: -2px;
+    height: 0.8rem;
+    width: calc(100%);
+    border-radius: 0.5rem;
+    background-color: rgba(58, 168, 252, 0.3);
+    z-index: -1;
 }
 
 .description {
-    margin: 10px 20px 10px 20px;
-    width: calc(100% - 40px);
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    color: #676767;
 }
 
 .labelsContainer {
     position: absolute;
+    right: 20px;
     bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin: 0px 20px 0px 20px;
     width: calc(100% - 40px);
     height: 24px;
 }

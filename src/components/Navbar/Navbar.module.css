@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     height: 64px;
-    width: 100vw;
+    width: calc(100vw - 13.33%);
+    margin: 0 6.67% 0 6.67%;
     padding: 0 6.67% 0 6.67%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -22,7 +23,7 @@
     left: 0;
     height: calc(100vh - 60px);
     width: 100vw;
-    padding: 0 6.67% 0 6.67%;
+    padding: 0 13.33% 0 13.33%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -30,7 +31,14 @@
     visibility: hidden; 
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-    transition: all 0.3s ease-in;
+    -moz-backdrop-filter: blur(0px);
+    -ms-backdrop-filter: blur(0px);
+    -o-backdrop-filter: blur(0px);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     z-index: 999;
 }
 
@@ -38,6 +46,9 @@
     visibility: visible;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
 }
 
 .link {

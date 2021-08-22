@@ -39,27 +39,26 @@ const HomeProjectShowcase = ({project}) => {
 
     return (
         <div ref={containerRef} className={styles.showcaseContainer}>
-            <h1 className={styles.showcaseTitle}>
-                {project.title}
-            </h1>
-            <div className={styles.labelsContainer}>
-                {project.labels.map((label, id) => (
-                    <div key={id} className={styles.label}>
-                        {label}
-                    </div>
-                ))}
-            </div>
-            <div className={styles.linksContainer}>
-                {project.links.github && 
-                    <Link to={project.links.github} className={styles.link}>
-                        <FaGithub className={styles.linkIcon} id="github"/>
-                    </Link>
-                }
-                {project.links.default &&
-                    <Link to={project.links.default} className={styles.link}>
-                        <FaLink className={styles.linkIcon} id="default"/>
-                    </Link>
-                }
+            <div className={styles.row}>
+                <div className={styles.labelsContainer}>
+                    {project.labels.map((label, id) => (
+                        <div key={id} className={styles.label}>
+                            {label}
+                        </div>
+                    ))}
+                </div>
+                <div className={styles.linksContainer}>
+                    {project.links.github && 
+                        <Link to={project.links.github} className={styles.link}>
+                            <FaGithub className={styles.linkIcon} id="github"/>
+                        </Link>
+                    }
+                    {project.links.default &&
+                        <Link to={project.links.default} className={styles.link}>
+                            <FaLink className={styles.linkIcon} id="default"/>
+                        </Link>
+                    }
+                </div>
             </div>
             <div className={styles.showcaseImageContainer}>
                 {(project.title in GIF_PROJECTS) ? 

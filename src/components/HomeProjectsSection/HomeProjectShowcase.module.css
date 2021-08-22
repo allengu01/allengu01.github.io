@@ -4,24 +4,22 @@
     right: 0;
     height: 100%;
     width: 50%;
+    padding: 60px 0px 60px 80px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.showcaseTitle {
-    font-size: 48px;
-    font-weight: 500;
-    color: #CDCDCD;
-    position: absolute;
-    text-align: left;
-    top: 6.67%;
-    left: 13.33%;
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
 .linksContainer {
-    position: absolute;
-    top: calc(6.67% + 64px);
-    right: 13.33%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -43,16 +41,14 @@
 }
 
 .linkIcon:hover {
-    color: #C879FF;
+    color: #A879FF;
 }
 
 .showcaseImageContainer {
-    position: absolute;
-    top: calc(6.67% + 144px);
-    right: 13.33%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
-    width: 66.67%;
+    width: 100%;
     height: 50%;
+    margin: 20px 40px 20px 40px;
 }
 
 .showcaseGatsbyImageContainer {
@@ -67,12 +63,10 @@
 }
 
 .labelsContainer {
-    position: absolute;
-    top: calc(6.67% + 72px);
-    left: 13.33%;
+    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     height: 24px;
 }

@@ -7,7 +7,7 @@
         },
         "image": "../images/projects/hohmann-transfer-neat.gif",
         "labels": ["Python", "Pygame", "NEAT"],
-        "description": "Applying the NEAT genetic algorithm to learn the Hohmann transfer (a manuever to transfer between two different orbits)."
+        "description": "Applying the NEAT genetic algorithm to learn the Hohmann transfer (a manuever used to transfer between two different orbits)."
     },
     {
         "title": "3D Snake",
@@ -27,7 +27,7 @@
         },
         "image": "../images/projects/k_means_visualizer.gif",
         "labels": ["Python", "Numpy"],
-        "description": "Graphs iterations of the k-means clustering algorithm when applied to the problem of determining a k-color palette representative of a provided image."
+        "description": "This script graphs iterations of the k-means clustering algorithm when applied to the problem of determining a k-color palette representative of a provided image."
     },
     {
         "title": "Find Your Zen",
@@ -36,7 +36,7 @@
             "github": "https://github.com/allengu01/find-your-zen"
         },
         "image": "../images/projects/find-your-zen.gif",
-        "labels": ["Swift"],
+        "labels": ["Swift", "Figma"],
         "description": "A mindfulness app including daily checkins, breathing exercises, and meditation timers. Built to practice iOS development and design."
     },
     {
@@ -47,7 +47,7 @@
         },
         "image": "../images/projects/musical-heap.png",
         "labels": ["HTML", "CSS", "JS"],
-        "description": "A min-heap that displays intermediate steps and plays musical notes during insert and remove operations."
+        "description": "A visualization tool for a min-heap that displays intermediate steps and plays musical notes during insert and remove operations."
     },
     {
         "title": "Personal Website",
@@ -57,7 +57,7 @@
         },
         "image": "../images/projects/personal-website-logo.png",
         "labels": ["React", "Gatsby"],
-        "description": "This is the personal website that I built to share a bit about myself on the Internet and store other projects that I create."
+        "description": "This is the personal website you're looking at right now! It's gone through many iterations and redesigns, and likely will go through many more in the future."
     },
     {
         "title": "Pathfinding Visualizer",

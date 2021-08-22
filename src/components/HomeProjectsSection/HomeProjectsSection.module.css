@@ -1,14 +1,14 @@
 .container {
     position: relative;
-    width: 100vw;
+    width: calc(100vw - 26.66%);
     height: calc(100vh - 64px);
-    padding: 0 6.67% 0 6.67%;
+    margin: 0 13.33% 0 13.33%;
 }
 
 .title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 48px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: 60px 0 0 0;
 }
 
@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 43.33%;
-    margin: 10px 3.33% 10px 3.33%;
+    width: 50%;
+    margin: 10px 0 10px 0;
 }
 
 .arrowContainer {
@@ -30,10 +30,10 @@
     display: flex;
     align-items: center;
     position: absolute;
-    left: calc(50% - 140px);
+    left: calc(50% - 100px);
     height: 24px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #535353;
 }
 
@@ -42,7 +42,7 @@
     height: 24px;
     width: auto;
     left: 50%;
-    color: #0B36DF;
+    color: rgba(58, 168, 252, 1.0);
     animation: arrowBounce 5.0s;
     animation-iteration-count: infinite;
 }

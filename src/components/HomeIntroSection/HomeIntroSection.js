@@ -40,7 +40,7 @@ const HomeIntroSection = () => {
                         <div className={`${styles.hello}`}>Hi! I'm <span className={styles.name}>Allen Gu.</span></div>
                     </motion.div>
                     <motion.div variants={itemVariants}>
-                        <div className={`${styles.description}`}>I’m a freshman at UC Berkeley studying Electrical Engineering and Computer Science.</div>
+                        <div className={`${styles.description}`}>I’m a second-year at UC Berkeley studying Electrical Engineering and Computer Science.</div>
                     </motion.div>
                 </motion.div>
             </div>
